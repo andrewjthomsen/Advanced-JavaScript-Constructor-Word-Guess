@@ -48,30 +48,27 @@ npm install inquirer
 npm install prompt
 ```
 
-
 ### Starting the game
+
 To start the game, run the following command from the project root directory (constructor-hangman):
-
 node index.js
-When you run this command, you will see the following screen:
 
-==========================================================================================================
 ### How to play
-==========================================================================================================
+
 When prompted to enter a letter, press any letter (a-z) on the keyboard to guess a letter.
 If incorrect, the guessed letter doesn't appear in the word.
 For every incorrect guess, the number of guesses remaining decrease by 1.
 If correct, the guessed letter appears in the word.
 If all the letters in the word are guesses before the number of guesses remaining reaches 0, winner.
 Otherwise, game over.
-===========================================================================================================
 The game can be exited at any time by pressing Ctrl + C on the keyboard.
-===========================================================================================================
 
-Technologies used to build app
+### Technologies used to build app
+
 Node.js (https://nodejs.org/en/)
 Javascript constructor functions
 
+### Future Plans for App
 
 Create a mySQL database and create a sign up and login system that prompts users for a username and password upon loading up the app.
 When random word is chosen at the beginning of the game, display a hint to help the user.
