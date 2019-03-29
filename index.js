@@ -47,10 +47,7 @@ var grabGuess = function() {
     .then(answers => {
       // console.log(answers);
       var check = [];
-  
-      // if statement isn't working correctly
-      // every time letter is guessed it returns congatulations
-      // not checking if letter guessed is a letter of chosen word/ displayWord
+
       // Returns true if user letter guess
       // completes the target word, false if not
       function gameOver() {
@@ -61,7 +58,7 @@ var grabGuess = function() {
         });
 
         // Complete word guessed
-        if(word.toString()== check.join('')) {
+        if(word.toString() == check.join('')) {
           return true;
         }
         
@@ -102,7 +99,3 @@ function restartGame() {
     });
 }
 playGame();
-
-// A variable to keep track of the guesses the user has left, and modifications
-// that remove one guess every time the user enters a letter and stops
-// the game when they run out of guesses
